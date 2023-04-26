@@ -1,0 +1,82 @@
+<main class="page">
+  <section class="contact">
+    <h2>Registro de empleado nuevo</h2>
+    <h3>Datos personales</h3>
+    <form action="/empleados/registro" method="POST">
+
+      <div class="completeDoubleInputLine">
+        <div class="form-grupo dobleInput">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div class="form-grupo dobleInput">
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" required />
+        </div>
+      </div>
+
+      <div class="completeDoubleInputLine">
+        <div class="form-grupo dobleInput">
+          <label for="identificacion">Identificación</label>
+          <input type="text" name="identificacion" id="identificacion" required />
+        </div>
+
+        <div class="form-grupo dobleInput">
+          <label for="birthday">Fecha de nacimiento</label>
+          <input type="date" name="birthday" id="birthday" required />
+        </div>
+      </div>
+
+      <div class="form-grupo">
+        <label for="direccion">Dirección</label>
+        <input type="text" name="direction" id="direction" required />
+      </div>
+
+      <div class="completeDoubleInputLine">
+        <div class="form-grupo dobleInput">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="form-grupo dobleInput">
+          <label for="phone">Teléfono</label>
+          <input type="tel" name="phone" id="phone" required />
+        </div>
+      </div>
+
+      <h3>Datos de ingreso</h3>
+
+       <div class="form-grupo">
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargo" id="cargo" required />
+      </div>
+
+      <div class="completeDoubleInputLine">
+        <div class="form-grupo dobleInput">
+          <label for="departament">Departamento</label>
+          <input type="text" name="departament" id="departament" required />
+        </div>
+
+        <div class="form-grupo dobleInput">
+          <label for="project">Proyecto</label>
+          <input type="text" name="project" id="project" required />
+        </div>
+      </div>
+      <div class="completeDoubleInputLine">
+        <div class="form-grupo dobleInput">
+          <label for="ingreso">Fecha de ingreso</label>
+          <input type="date" name="ingreso" id="ingreso" required />
+        </div>
+
+        <div class="form-grupo dobleInput">
+          <label for="sueldo">Sueldo</label>
+          <input type="text" name="sueldo" id="sueldo" required />
+        </div>
+      </div>
+      <div class="button">
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+
+  </section>
+</main>

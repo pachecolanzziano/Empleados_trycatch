@@ -1,0 +1,42 @@
+<main>
+  <div class="container pt-5">
+    <div class="mx-auto text-center">
+    <h2>Lista de empleados </h2>
+    </div>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>DNI</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Departamento</th>
+                <th>Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each data}}
+              <tr>
+                <td>{{this.id_empleado}}</td>
+                <td>{{this.nombre}}</td>
+                <td>{{this.apellido}}</td>
+                <td>{{this.departamento}}</td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-info"><i class="fa fa-pencil"></i> Editar</a>
+                  <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Eliminar</a>
+                </td>
+                {{else}}
+                <td td>Sin datos</td>
+                {{/each}}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+</main>
